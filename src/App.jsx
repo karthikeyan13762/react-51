@@ -1,9 +1,18 @@
 
 function App(){
-  console.log("Hello From Component");
+  let now =new Date()
+  console.log(now);
+  let nowdate=now.toString();
+
+
+  let a=10;
+  let b=15;
+
+
   return(
     <div>
-      <h1>Hello World</h1>
+      <h1>Hello World it id {nowdate}</h1>
+      <p>a+b is {a+b}</p>
     </div>
   )
 }
