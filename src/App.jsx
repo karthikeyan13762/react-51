@@ -1,8 +1,10 @@
 
-const App=()=>{
+function App(){
+  console.log("Hello From Component");
   return(
-    <p>Hello World</p>
+    <div>
+      <h1>Hello World</h1>
+    </div>
   )
 }
-
 export default App;
