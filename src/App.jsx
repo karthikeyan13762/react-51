@@ -12,7 +12,7 @@ function Hello(props) {
 function App(){
 
 let user1="Karthi";
-let user2="Karthikeyan";
+let user2="Karthikeyan M";
 
 
   return(
