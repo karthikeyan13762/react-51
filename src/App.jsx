@@ -1,7 +1,8 @@
 
-function Hello() {
+function Hello(props) {
+  console.log(props);
   return(
-    <p>Helloworld</p>
+    <p>Hello{props.userName}</p>
   )
 }
 
@@ -9,11 +10,16 @@ function Hello() {
 
 
 function App(){
+
+let user1="Karthi";
+let user2="Karthikeyan";
+
+
   return(
     <div>
       <h1>Gretings</h1>
-      <Hello/>
-       <Hello/>
+      <Hello userName={user1}/>
+       <Hello userName={user2}/>
     </div>
   )
 }
