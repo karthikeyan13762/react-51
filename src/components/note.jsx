@@ -2,8 +2,8 @@ import React from 'react'
 
 function Note({notse}) {
   return (
-    <li>{notse.important?notse.content+"★":notse.content}</li>
+    <li>{notse.content}{notse.important&&"★"}</li>
   )
 }
 
-export default Note
+export default Note;
