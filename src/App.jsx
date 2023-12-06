@@ -1,29 +1,26 @@
 import React from 'react'
-
 import Note from './components/note';
 function App({notse}) {
-
   console.log(notse);
   return (
-   <div>
-    <h1>Headings</h1>
-    <u>
-      {
+    <>
 
-        notse.map(notes=>{
-          return( <Note key={notes.id} notes={notes} />
-)
-         
-        }
-       )
+    <h1>Notes</h1>
+    <ul>
+    {notse.map(notse=>{
 
 
-      }
-    </u>
+      return <Note key={notse.id} notse={notse}/>
 
-   </div>
-   
-   
+
+
+    })
+
+
+    }
+    </ul>
+    </>
+    
   )
 }
 
