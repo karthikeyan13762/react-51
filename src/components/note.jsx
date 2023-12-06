@@ -1,8 +1,9 @@
 import React from 'react'
 
 function Note({notse}) {
+   
   return (
-    <li>{notse.content}{notse.important&&"★"}</li>
+    <li>{notse.content}</li>
   )
 }
 
