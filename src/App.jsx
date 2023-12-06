@@ -1,11 +1,28 @@
-function App(){
+
+
+function Hello(props){
+  console.log(props);
+
   return(
 
-    <div>
-    <h1>App Component</h1>
-    <p>Hello world</p>
+    <p>{props.name} your age is {props.age}</p>
 
-    </div>
   )
+
+
 }
+
+
+function App(){
+
+  return(
+    <div>
+    <Hello name ="Karthi"  age={25} />
+    <Hello  name ="KarthiKeyan" age={26}  />
+    </div>
+    
+  )
+
+}
+
 export default App;
