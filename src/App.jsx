@@ -2,10 +2,10 @@ import React from 'react'
 import Note from './components/note'
 function App({notse}) {
 
- function addNotes(event){
+ function handleSaveClick(event){
   console.log(event);
   event.preventDefault();
-  console.log("test");
+  console.log("Butto clicked");
  }
   
   return (
@@ -18,8 +18,9 @@ function App({notse}) {
     </ul>
 
 
-    <form onSubmit={addNotes}>
+    <form >
       <input/>
+      <button onClick={handleSaveClick}>Save note</button>
     </form>
     </div>
     
