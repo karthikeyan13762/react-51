@@ -1,24 +1,30 @@
 import React from 'react'
 
-function App({notes}) {
-  // console.log(props);
+import Note from './components/note';
+function App({notse}) {
 
-  // const notes=props.notes;
-  console.log(notes);
+  console.log(notse);
   return (
-    <div>
-      <h1>
-        Notes
-      </h1>
-      <ul>
-        <li>{notes[0].content}</li>
-        <li>{notes[1].content}</li>
-        <li>{notes[2].content}</li>
-        <li>{notes[3].content}</li>
-        <li>{notes[4].content}</li>
-      </ul>
-    </div>
+   <div>
+    <h1>Headings</h1>
+    <u>
+      {
+
+        notse.map(notes=>{
+          return( <Note key={notes.id} notes={notes} />
+)
+         
+        }
+       )
+
+
+      }
+    </u>
+
+   </div>
+   
+   
   )
 }
 
-export default App;
+export default App
